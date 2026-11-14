@@ -6,7 +6,10 @@ const P=[
 {n:'Zurich 1950',p:'./assets/img/opt/p-zurich.webp',l:'./Zurich.html',d:'Affiche Swiss Style : grille stricte, Helvetica et carrés rouges.',t:'affiche',k:'Illustrator · Photoshop'},
 {n:'Micromania',p:'./assets/img/opt/p-micromania.webp',l:'./Micromania.html',d:'Refonte UX/UI d’un univers gaming, plus contemporaine.',t:'figma',k:'Figma'},
 {n:'Culture Jeune',p:'./assets/img/opt/p-culture.webp',l:'./Culture.html',d:'Plateforme culturelle : événements, contenus et navigation intuitive.',t:'figma',k:'Figma'},
-{n:'Centipede',p:'./assets/img/opt/p-centipede.webp',l:'./Centipede.html',d:'Pièce textile customisée à la main, entre couture et illustration.',t:'couture',k:'Couture · Peinture'}];
+{n:'Bloom & Co',p:'./assets/img/opt/p-bloom.webp',l:'./BloomAndCo.html',d:'Page d’accueil de l’e-shop d’une marque fictive de plantes d’intérieur de luxe.',t:'figma',k:'Figma'},
+{n:'Centipede',p:'./assets/img/opt/p-centipede.webp',l:'./Centipede.html',d:'Pièce textile customisée à la main, entre couture et illustration.',t:'couture',k:'Couture · Peinture'},
+{n:'Ascension',p:'./assets/img/opt/p-ascension.webp',l:'./Ascension.html',d:'Projet libre : une illustration du manga Ascension en bleu et or, déchirée par une étoile.',t:'perso',k:'Photoshop'},
+{n:'Vogue × JoJo',p:'./assets/img/opt/p-vogue.webp',l:'./VogueGiorno.html',d:'Projet libre : fausse couverture Vogue Italia avec Giorno Giovanna, en noir et blanc chromé.',t:'perso',k:'Photoshop'}];
 const $=s=>document.querySelector(s),list=$('#plist'),view=$('#pview'),img=$('#pimg');
 function show(p){$('#pname').textContent=p.n;$('#pdesc').textContent=p.d;view.href=p.l;img.alt='Aperçu du projet '+p.n;img.classList.remove('in');img.src=p.p;void img.offsetWidth;img.classList.add('in');
 list.querySelectorAll('li').forEach(li=>li.classList.toggle('on',li.dataset.l===p.l))}

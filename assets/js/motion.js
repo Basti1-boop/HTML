@@ -20,7 +20,7 @@ const bar=document.createElement('div');bar.className='scrollbar';bar.setAttribu
 const secs=[...document.querySelectorAll('.sec')];
 let tick=false;
 function onScroll(){tick=false;const h=doc.scrollHeight-innerHeight;bar.style.setProperty('--p',h>0?scrollY/h:0);
-  if(!reduce)secs.forEach(s=>{const r=s.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight)s.style.setProperty('--py',(r.top*-.18).toFixed(1)+'px')})}
+  if(!reduce)secs.forEach(s=>{const r=s.getBoundingClientRect();if(r.bottom>0&&r.top<innerHeight)s.style.setProperty('--py',(r.top*-.12).toFixed(1)+'px')})}
 addEventListener('scroll',()=>{if(!tick){tick=true;requestAnimationFrame(onScroll)}},{passive:true});onScroll();
 
 /* apparitions au scroll */

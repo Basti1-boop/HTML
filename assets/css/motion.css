@@ -38,8 +38,6 @@ h2.chrome{animation-delay:1.5s}
 @keyframes rise{from{opacity:0;transform:translateY(40px);clip-path:inset(0 0 100% 0)}to{opacity:1;transform:none;clip-path:inset(0 0 -20% 0)}}
 .hero-mark{animation:float 7s ease-in-out infinite}
 @keyframes float{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-18px) rotate(1.5deg)}}
-.hero:after{animation:spin 80s linear infinite}
-@keyframes spin{to{transform:translateY(-50%) rotate(360deg)}}
 .hero:before{animation:outline 9s ease-in-out infinite}
 @keyframes outline{0%,100%{-webkit-text-stroke-color:rgba(255,255,255,.65)}50%{-webkit-text-stroke-color:rgba(255,255,255,.25)}}
 .sys .caret{display:inline-block;width:.55em;height:1em;margin-left:2px;vertical-align:-2px;background:var(--muted);animation:blink 1s steps(1) infinite}
